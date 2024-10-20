@@ -21,10 +21,8 @@ function checkProbabilityTheory(count) {
     let oddNumberCount = 0;
 
     for (let i = 0; i < count; i++) {
-    
         let random = Math.ceil(Math.random() * (1000 - 100));
          // console.log (random) ;
-
         if (random % 2 === 0) {
             evenNumberCount++;
                // console.log(evenNumberCount);
@@ -36,7 +34,7 @@ function checkProbabilityTheory(count) {
 
     let evenPercent = (evenNumberCount / count) * 100;
     let oddPercent = (oddNumberCount / count) * 100;
-    let oddVsEvenPersent = (evenNumberCount / oddNumberCount) * 100 ;
+    let oddVsEvenPersent = (evenNumberCount*100) / oddNumberCount;
     let oddVsEven = (oddNumberCount / evenNumberCount);
 
     if (Math.abs(evenPercent - 50) < 5 && Math.abs(oddPercent - 50) < 5) {
@@ -50,8 +48,8 @@ function checkProbabilityTheory(count) {
         console.log(`Кількість непарних чисел: ${oddNumberCount}`);
         console.log(`Відсоток парних: ${evenPercent.toFixed()}%`);
         console.log(`Відсоток непарних: ${oddPercent.toFixed()}%`);
-        console.log(`Відношення парних до непарних у вiдсотках:${oddVsEvenPersent.toFixed(2)}%`);
-        console.log(`Відношення парних до непарних: 1/${oddVsEven.toFixed(1)}`)
+        console.log(`Відношення парних до непарних у вiдсотках: ${oddVsEvenPersent.toFixed()}%`);
+        console.log(`Відношення парних до непарних: 1/${oddVsEven.toFixed(2)}`)
 }
 
-checkProbabilityTheory(10);
+checkProbabilityTheory(100);
