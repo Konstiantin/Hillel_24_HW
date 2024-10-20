@@ -36,8 +36,7 @@ function checkProbabilityTheory(count) {
 
     let evenPercent = (evenNumberCount / count) * 100;
     let oddPercent = (oddNumberCount / count) * 100;
-    let oddPercentVsEvenPercent = (evenNumberCount / oddNumberCount) * 100;//Y * (X / 100)
-    //let oddPercentVsEvenPercent = (oddNumberCount * (evenNumberCount / 100));
+    let oddPercentVsEvenPercent = (evenNumberCount / oddNumberCount) * 100;
 
     if (Math.abs(evenPercent - 50) < 5 && Math.abs(oddPercent - 50) < 5) {
         console.log("Співвідношення близьке до 50/50");
