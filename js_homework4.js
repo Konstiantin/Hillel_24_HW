@@ -23,7 +23,7 @@ function checkProbabilityTheory(count) {
     for (let i = 0; i < count; i++) {
     
         let random = Math.ceil(Math.random() * (1000 - 100));
-          console.log (random) ;
+         // console.log (random) ;
 
         if (random % 2 === 0) {
             evenNumberCount++;
