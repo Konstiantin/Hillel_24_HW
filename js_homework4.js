@@ -26,7 +26,8 @@ function checkProbabilityTheory(count) {
         if (random % 2 === 0) {
             evenNumberCount++;
                // console.log(evenNumberCount);
-        } else {
+        } 
+        else {
             oddNumberCount++;
                 //console.log(evenNumberCount);
         }
@@ -39,7 +40,8 @@ function checkProbabilityTheory(count) {
 
     if (Math.abs(evenPercent - 50) < 5 && Math.abs(oddPercent - 50) < 5) {
         console.log("Співвідношення близьке до 50/50");
-    } else {
+    } 
+    else {
         console.log("Співвідношення не близьке до 50/50");
     }
 
