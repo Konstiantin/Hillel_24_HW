@@ -46,10 +46,10 @@ function checkProbabilityTheory(count) {
         console.log(`Згенеровано ${count} випадкових чисел`);
         console.log(`Кількість парних чисел: ${evenNumberCount}`);
         console.log(`Кількість непарних чисел: ${oddNumberCount}`);
-        console.log(`Відсоток парних: ${evenPercent.toFixed()}%`);
-        console.log(`Відсоток непарних: ${oddPercent.toFixed()}%`);
+        console.log(`Відсоток парних: ${evenPercent.toFixed(1)}%`);
+        console.log(`Відсоток непарних: ${oddPercent.toFixed(1)}%`);
         console.log(`Відношення парних до непарних у вiдсотках: ${oddVsEvenPersent.toFixed()}%`);
         console.log(`Відношення парних до непарних: 1/${oddVsEven.toFixed(2)}`)
 }
 
-checkProbabilityTheory(100);
+checkProbabilityTheory(1000);
