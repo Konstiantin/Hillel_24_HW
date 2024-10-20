@@ -36,20 +36,22 @@ function checkProbabilityTheory(count) {
 
     let evenPercent = (evenNumberCount / count) * 100;
     let oddPercent = (oddNumberCount / count) * 100;
-    let oddPercentVsEvenPercent = (evenNumberCount / oddNumberCount) * 100 ;
+    let oddVsEvenPersent = (evenNumberCount / oddNumberCount) * 100 ;
+    let oddVsEven = (oddNumberCount / evenNumberCount);
 
     if (Math.abs(evenPercent - 50) < 5 && Math.abs(oddPercent - 50) < 5) {
         console.log("Співвідношення близьке до 50/50");
     } else {
         console.log("Співвідношення не близьке до 50/50");
     }
-    
+
         console.log(`Згенеровано ${count} випадкових чисел`);
         console.log(`Кількість парних чисел: ${evenNumberCount}`);
         console.log(`Кількість непарних чисел: ${oddNumberCount}`);
         console.log(`Відсоток парних: ${evenPercent.toFixed()}%`);
         console.log(`Відсоток непарних: ${oddPercent.toFixed()}%`);
-        console.log(`Відношення парних до непарних: ${oddPercentVsEvenPercent.toFixed()}%`);
-
+        console.log(`Відношення парних до непарних у вiдсотках:${oddVsEvenPersent.toFixed(2)}%`);
+        console.log(`Відношення парних до непарних: 1/${oddVsEven.toFixed(1)}`)
 }
+
 checkProbabilityTheory(10);
